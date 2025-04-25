@@ -1,0 +1,56 @@
+body {
+    background-color: #111;
+    background: url("img1.jpg"), url("img2.jpg"), url("img3.jpg"), url("img4.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: 0 0;
+    animation: moverFundo 30s linear infinite;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+@keyframes moverFundo {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -3000px 0;
+    }
+  }
+
+.container {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #00ff88;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#mensagem {
+    color: orange;
+    margin-top: 15px;
+}
